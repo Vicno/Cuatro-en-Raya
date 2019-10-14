@@ -32,11 +32,13 @@ namespace _4enRaya
             seleccionado = (PictureBox)sender;
             if (seleccionado != null)
             {
-                int numero = (Convert.ToInt32(seleccionado.Name.ToString().Substring(7)))%7;
-                if (validacion(numero))//validar
+                int numero = (Convert.ToInt32(seleccionado.Name.ToString().Substring(7)));
+                int posicion = numero % 7;
+                int profundidad = fichas[posicion];
+                if (validacion(posicion))//validar
                 {
-                    int altura = fichas[numero];
-
+                    int numeroInsertar = 42 - ((profundidad + 1) * 7) - (7 - posicion);
+                    String nombre = "picture" + numeroInsertar;
                 }
             }
 }
