@@ -123,8 +123,35 @@ namespace _4enRaya
             }
             if (cont == 3)
             {
-                String color = turno%2==0 ? "azul" : "rojo";
-                MessageBox.Show("Gano "+color);
+                String color = turno % 2 == 0 ? "azul" : "rojo";
+                MessageBox.Show("Gano " + color);
+                reiniciar();
+            }
+            int contadordeprofundidades=0;
+            foreach (int prof in fichas)
+            {
+                if (prof==6)
+                {
+                    contadordeprofundidades++;
+                }
+            }
+            if(contadordeprofundidades==7)
+            {
+                MessageBox.Show("empate");
+                reiniciar();
+            }
+        }
+
+        private void reiniciar()
+        {
+            foreach(PictureBox pic in pictures)
+            {
+                pic.BackgroundImage = null;
+                pic.Tag = " ";
+            }
+            for(int i=0;i<7;i++)
+            {
+                fichas[i]=0;
             }
         }
 
@@ -234,5 +261,11 @@ private void Form1_Load(object sender, EventArgs e)
             BotonMutear.Visible = false;
             BotonSonido.Visible = true;
         }
+
+        private void Botonreiniciar_Click(object sender, EventArgs e)
+        {
+            reiniciar();
+        }
     }
-    }
+
+}
