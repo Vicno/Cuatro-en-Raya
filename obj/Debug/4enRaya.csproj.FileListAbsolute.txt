@@ -9,3 +9,24 @@ C:\Users\DIEGO\source\repos\4enRaya\Cuatro-en-Raya\obj\Debug\4enRaya.csproj.Core
 C:\Users\DIEGO\source\repos\4enRaya\Cuatro-en-Raya\obj\Debug\4enRaya.exe
 C:\Users\DIEGO\source\repos\4enRaya\Cuatro-en-Raya\obj\Debug\4enRaya.pdb
 C:\Users\DIEGO\source\repos\4enRaya\Cuatro-en-Raya\bin\Debug\2CELLOS - Seven Nation Army.wav
+C:\Users\human\OneDrive\Documentos\GitHub\Cuatro-en-Raya\bin\Debug\2CELLOS - Seven Nation Army.wav
+C:\Users\human\OneDrive\Documentos\GitHub\Cuatro-en-Raya\bin\Debug\4enRaya.exe.config
+C:\Users\human\OneDrive\Documentos\GitHub\Cuatro-en-Raya\bin\Debug\4enRaya.exe
+C:\Users\human\OneDrive\Documentos\GitHub\Cuatro-en-Raya\bin\Debug\4enRaya.pdb
+C:\Users\human\OneDrive\Documentos\GitHub\Cuatro-en-Raya\obj\Debug\4enRaya.csprojAssemblyReference.cache
+C:\Users\human\OneDrive\Documentos\GitHub\Cuatro-en-Raya\obj\Debug\_4enRaya.Form1.resources
+C:\Users\human\OneDrive\Documentos\GitHub\Cuatro-en-Raya\obj\Debug\_4enRaya.Properties.Resources.resources
+C:\Users\human\OneDrive\Documentos\GitHub\Cuatro-en-Raya\obj\Debug\4enRaya.csproj.GenerateResource.cache
+C:\Users\human\OneDrive\Documentos\GitHub\Cuatro-en-Raya\obj\Debug\4enRaya.csproj.CoreCompileInputs.cache
+C:\Users\human\OneDrive\Documentos\GitHub\Cuatro-en-Raya\obj\Debug\4enRaya.exe
+C:\Users\human\OneDrive\Documentos\GitHub\Cuatro-en-Raya\obj\Debug\4enRaya.pdb
+C:\Users\TOSHIBA\Desktop\UPB\IVSemestre\IngenieriaDeSoftware\ExamenII\Visual2\Cuatro-en-Raya\bin\Debug\2CELLOS - Seven Nation Army.wav
+C:\Users\TOSHIBA\Desktop\UPB\IVSemestre\IngenieriaDeSoftware\ExamenII\Visual2\Cuatro-en-Raya\bin\Debug\4enRaya.exe.config
+C:\Users\TOSHIBA\Desktop\UPB\IVSemestre\IngenieriaDeSoftware\ExamenII\Visual2\Cuatro-en-Raya\bin\Debug\4enRaya.exe
+C:\Users\TOSHIBA\Desktop\UPB\IVSemestre\IngenieriaDeSoftware\ExamenII\Visual2\Cuatro-en-Raya\bin\Debug\4enRaya.pdb
+C:\Users\TOSHIBA\Desktop\UPB\IVSemestre\IngenieriaDeSoftware\ExamenII\Visual2\Cuatro-en-Raya\obj\Debug\4enRaya.csprojAssemblyReference.cache
+C:\Users\TOSHIBA\Desktop\UPB\IVSemestre\IngenieriaDeSoftware\ExamenII\Visual2\Cuatro-en-Raya\obj\Debug\_4enRaya.Form1.resources
+C:\Users\TOSHIBA\Desktop\UPB\IVSemestre\IngenieriaDeSoftware\ExamenII\Visual2\Cuatro-en-Raya\obj\Debug\_4enRaya.Properties.Resources.resources
+C:\Users\TOSHIBA\Desktop\UPB\IVSemestre\IngenieriaDeSoftware\ExamenII\Visual2\Cuatro-en-Raya\obj\Debug\4enRaya.csproj.GenerateResource.cache
+C:\Users\TOSHIBA\Desktop\UPB\IVSemestre\IngenieriaDeSoftware\ExamenII\Visual2\Cuatro-en-Raya\obj\Debug\4enRaya.exe
+C:\Users\TOSHIBA\Desktop\UPB\IVSemestre\IngenieriaDeSoftware\ExamenII\Visual2\Cuatro-en-Raya\obj\Debug\4enRaya.pdb
