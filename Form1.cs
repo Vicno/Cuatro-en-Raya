@@ -62,10 +62,12 @@ namespace _4enRaya
             if (turno % 2 == 0)
             {
                 aux.BackgroundImage = Properties.Resources.azul;
+                aux.Tag = "azul";
             }
             else
             {
                 aux.BackgroundImage = Properties.Resources.rojo;
+                aux.Tag = "rojo";
             }
         }
 
