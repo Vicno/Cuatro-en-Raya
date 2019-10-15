@@ -53,11 +53,81 @@ namespace _4enRaya
                     auxiliar = buscar(nombre);
                     asignarColor(auxiliar);
                     fichas[posicion]++;
+                    comprobarGanador(numeroInsertar);
                     turno++;
+                    
                     //MessageBox.Show(""+auxiliar.BackColor);
                 }
             }
         }
+
+        private void comprobarGanador(int numeroInsertar)
+        {
+            int cont = 0;
+            if ((numeroInsertar % 7) < 4)
+            {
+                int der = numeroInsertar + 1;
+                while (cont < 3)
+                {
+                    String nombreder = "picture" + der;
+                    PictureBox auxder = buscar(nombreder);
+                    if (auxder.Tag == auxiliar.Tag)
+                    {
+                        der++;
+                        cont++;
+                    }
+                    else
+                    {
+                        cont = 0;
+                        break;
+                    }
+                }
+            }
+            if ((numeroInsertar % 7) > 3)
+            {
+                int izq = numeroInsertar - 1;
+                while (cont < 3)
+                {
+                    String nombreizq = "picture" + izq;
+                    PictureBox auxizq = buscar(nombreizq);
+                    if (auxizq.Tag == auxiliar.Tag)
+                    {
+                        izq--;
+                        cont++;
+                    }
+                    else
+                    {
+                        cont = 0;
+                        break;
+                    }
+                }
+            }
+            if (numeroInsertar < 21)
+            {
+                int abajo = numeroInsertar + 7;
+                while (cont < 3)
+                {
+                    String nombreabajo = "picture" + abajo;
+                    PictureBox auxabajo = buscar(nombreabajo);
+                    if (auxabajo.Tag == auxiliar.Tag)
+                    {
+                        abajo+=7;
+                        cont++;
+                    }
+                    else
+                    {
+                        cont = 0;
+                        break;
+                    }
+                }
+            }
+            if (cont == 3)
+            {
+                String color = turno%2==0 ? "azul" : "rojo";
+                MessageBox.Show("Gano "+color);
+            }
+        }
+
         private void asignarColor(PictureBox aux)
         {
             if (turno % 2 == 0)
