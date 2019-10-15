@@ -15,6 +15,7 @@ namespace _4enRaya
     {
         int turno = 0;
         int tamaño = 60;
+        int cont = 0;
         int[] fichas = new int[7];
         PictureBox seleccionado = null;
         PictureBox auxiliar = null;
@@ -63,106 +64,142 @@ namespace _4enRaya
 
         private void comprobarGanador(int numeroInsertar)
         {
-            int cont = 0;
             if ((numeroInsertar % 7) < 4)
             {
-                int der = numeroInsertar + 1;
-                while (cont < 3)
-                {
-                    String nombreder = "picture" + der;
-                    PictureBox auxder = buscar(nombreder);
-                    if (auxder.Tag == auxiliar.Tag)
-                    {
-                        der++;
-                        cont++;
-                    }
-                    else
-                    {
-                        cont = 0;
-                        break;
-                    }
-                }
+                comprobarDer(numeroInsertar);
             }
             if ((numeroInsertar % 7) > 2)
             {
-                int izq = numeroInsertar - 1;
-                while (cont < 3)
-                {
-                    String nombreizq = "picture" + izq;
-                    PictureBox auxizq = buscar(nombreizq);
-                    if (auxizq.Tag == auxiliar.Tag)
-                    {
-                        izq--;
-                        cont++;
-                    }
-                    else
-                    {
-                        cont = 0;
-                        break;
-                    }
-                }
+                comprobarIzq(numeroInsertar);
             }
             if (numeroInsertar < 21)
             {
-                int abajo = numeroInsertar + 7;
-                while (cont < 3)
-                {
-                    String nombreabajo = "picture" + abajo;
-                    PictureBox auxabajo = buscar(nombreabajo);
-                    if (auxabajo.Tag == auxiliar.Tag)
-                    {
-                        abajo+=7;
-                        cont++;
-                    }
-                    else
-                    {
-                        cont = 0;
-                        break;
-                    }
-                }
+                comprobarabajo(numeroInsertar);
             }
             if ((numeroInsertar < 19)&& ((numeroInsertar % 7) < 4))
             {
-                int diagder = numeroInsertar + 8;
-                while (cont < 3)
-                {
-                    String nombrediagder = "picture" + diagder;
-                    PictureBox auxdiagder = buscar(nombrediagder);
-                    if (auxdiagder.Tag == auxiliar.Tag)
-                    {
-                        diagder += 8;
-                        cont++;
-                    }
-                    else
-                    {
-                        cont = 0;
-                        break;
-                    }
-                }
+                comprobardiagder(numeroInsertar);
             }
             if ((numeroInsertar < 19) && ((numeroInsertar % 7) > 2))
             {
-                int diagizq = numeroInsertar + 6;
-                while (cont < 3)
-                {
-                    String nombrediagizq = "picture" + diagizq;
-                    PictureBox auxdiagizq = buscar(nombrediagizq);
-                    if (auxdiagizq.Tag == auxiliar.Tag)
-                    {
-                        diagizq += 6;
-                        cont++;
-                    }
-                    else
-                    {
-                        cont = 0;
-                        break;
-                    }
-                }
+                comprobardiagizq(numeroInsertar);
             }
             if (cont == 3)
             {
                 String color = turno%2==0 ? "azul" : "rojo";
                 MessageBox.Show("Gano "+color);
+            }
+        }
+
+        private void comprobarDer(int numeroInsertar)
+        {
+            int der = numeroInsertar + 1;
+            while (cont < 3)
+            {
+                String nombreder = "picture" + der;
+                PictureBox auxder = buscar(nombreder);
+                if (auxder.Tag == auxiliar.Tag)
+                {
+                    der++;
+                    cont++;
+                }
+                else
+                {
+                    //if (cont > 0)
+                    //{
+                    //    comprobarIzq(numeroInsertar);
+                    //}
+                    //else
+                    //{
+                        cont = 0;
+                        break;
+                    //}
+                }
+            }
+        }
+
+        private void comprobarIzq(int numeroInsertar)
+        {
+            int izq = numeroInsertar - 1;
+            while (cont < 3)
+            {
+                String nombreizq = "picture" + izq;
+                PictureBox auxizq = buscar(nombreizq);
+                if (auxizq.Tag == auxiliar.Tag)
+                {
+                    izq--;
+                    cont++;
+                }
+                else
+                {
+                    //if (cont > 0)
+                    //{
+                    //    comprobarDer(numeroInsertar);
+                    //}
+                    //else
+                    //{
+                        cont = 0;
+                        break;
+                    //}
+                }
+            }
+        }
+
+        private void comprobarabajo(int numeroInsertar)
+        {
+            int abajo = numeroInsertar + 7;
+            while (cont < 3)
+            {
+                String nombreabajo = "picture" + abajo;
+                PictureBox auxabajo = buscar(nombreabajo);
+                if (auxabajo.Tag == auxiliar.Tag)
+                {
+                    abajo += 7;
+                    cont++;
+                }
+                else
+                {
+                    cont = 0;
+                    break;
+                }
+            }
+        }
+        private void comprobardiagder(int numeroInsertar)
+        {
+            int diagder = numeroInsertar + 8;
+            while (cont < 3)
+            {
+                String nombrediagder = "picture" + diagder;
+                PictureBox auxdiagder = buscar(nombrediagder);
+                if (auxdiagder.Tag == auxiliar.Tag)
+                {
+                    diagder += 8;
+                    cont++;
+                }
+                else
+                {
+                    cont = 0;
+                    break;
+                }
+            }
+        }
+        private void comprobardiagizq(int numeroInsertar)
+        {
+            int diagizq = numeroInsertar + 6;
+            while (cont < 3)
+            {
+                String nombrediagizq = "picture" + diagizq;
+                PictureBox auxdiagizq = buscar(nombrediagizq);
+                if (auxdiagizq.Tag == auxiliar.Tag)
+                {
+                    diagizq += 6;
+                    cont++;
+                }
+                else
+                {
+                    cont = 0;
+                    break;
+                }
             }
         }
 
