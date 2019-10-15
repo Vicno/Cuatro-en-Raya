@@ -14,10 +14,9 @@ namespace _4enRaya
     public partial class Form1 : Form
     {
         int turno = 0;
-<<<<<<< HEAD
-=======
+
         int tamaño = 60;
->>>>>>> 815192f47b15b48d262eae29e7994d2f4387c0ae
+
         int[] fichas = new int[7];
         PictureBox seleccionado = null;
         PictureBox auxiliar = null;
@@ -66,11 +65,12 @@ namespace _4enRaya
 
         private void comprobarGanador(int numeroInsertar)
         {
+            int mov = 0;
             int cont = 0;
             if ((numeroInsertar % 7) < 4)
             {
                 int der = numeroInsertar + 1;
-                while (cont < 3)
+                while (mov < 3)
                 {
                     String nombreder = "picture" + der;
                     PictureBox auxder = buscar(nombreder);
@@ -81,15 +81,17 @@ namespace _4enRaya
                     }
                     else
                     {
-                        cont = 0;
+                        mov = 0;
+                        //cont = 0;
                         break;
                     }
+                    mov++;
                 }
             }
             if ((numeroInsertar % 7) > 3)
             {
                 int izq = numeroInsertar - 1;
-                while (cont < 3)
+                while (mov < 3)
                 {
                     String nombreizq = "picture" + izq;
                     PictureBox auxizq = buscar(nombreizq);
@@ -100,15 +102,22 @@ namespace _4enRaya
                     }
                     else
                     {
-                        cont = 0;
+                        //cont = 0;
+                        mov = 0;
                         break;
                     }
+                    mov++;
                 }
+            }
+            if (cont >= 3)
+            {
+                String color = turno % 2 == 0 ? "azul" : "rojo";
+                MessageBox.Show("Gano " + color);
             }
             if (numeroInsertar < 21)
             {
                 int abajo = numeroInsertar + 7;
-                while (cont < 3)
+                while (mov < 3)
                 {
                     String nombreabajo = "picture" + abajo;
                     PictureBox auxabajo = buscar(nombreabajo);
@@ -116,15 +125,16 @@ namespace _4enRaya
                     {
                         abajo+=7;
                         cont++;
+                        mov++;
                     }
                     else
                     {
-                        cont = 0;
+                        mov = 0;
                         break;
                     }
                 }
             }
-            if (cont == 3)
+            if (cont >= 3)
             {
                 String color = turno%2==0 ? "azul" : "rojo";
                 MessageBox.Show("Gano "+color);
