@@ -30,3 +30,13 @@ C:\Users\TOSHIBA\Desktop\UPB\IVSemestre\IngenieriaDeSoftware\ExamenII\Visual2\Cu
 C:\Users\TOSHIBA\Desktop\UPB\IVSemestre\IngenieriaDeSoftware\ExamenII\Visual2\Cuatro-en-Raya\obj\Debug\4enRaya.csproj.GenerateResource.cache
 C:\Users\TOSHIBA\Desktop\UPB\IVSemestre\IngenieriaDeSoftware\ExamenII\Visual2\Cuatro-en-Raya\obj\Debug\4enRaya.exe
 C:\Users\TOSHIBA\Desktop\UPB\IVSemestre\IngenieriaDeSoftware\ExamenII\Visual2\Cuatro-en-Raya\obj\Debug\4enRaya.pdb
+C:\UPB\Proyectos Visual Studio\Cuatro-en-Raya\bin\Debug\2CELLOS - Seven Nation Army.wav
+C:\UPB\Proyectos Visual Studio\Cuatro-en-Raya\bin\Debug\4enRaya.exe.config
+C:\UPB\Proyectos Visual Studio\Cuatro-en-Raya\bin\Debug\4enRaya.exe
+C:\UPB\Proyectos Visual Studio\Cuatro-en-Raya\bin\Debug\4enRaya.pdb
+C:\UPB\Proyectos Visual Studio\Cuatro-en-Raya\obj\Debug\4enRaya.csprojAssemblyReference.cache
+C:\UPB\Proyectos Visual Studio\Cuatro-en-Raya\obj\Debug\_4enRaya.Form1.resources
+C:\UPB\Proyectos Visual Studio\Cuatro-en-Raya\obj\Debug\_4enRaya.Properties.Resources.resources
+C:\UPB\Proyectos Visual Studio\Cuatro-en-Raya\obj\Debug\4enRaya.csproj.GenerateResource.cache
+C:\UPB\Proyectos Visual Studio\Cuatro-en-Raya\obj\Debug\4enRaya.exe
+C:\UPB\Proyectos Visual Studio\Cuatro-en-Raya\obj\Debug\4enRaya.pdb

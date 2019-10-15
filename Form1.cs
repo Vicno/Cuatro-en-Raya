@@ -59,9 +59,6 @@ namespace _4enRaya
                     //MessageBox.Show(""+auxiliar.BackColor);
                 }
             }
-<<<<<<< HEAD
-        } 
-=======
         }
 
         private void comprobarGanador(int numeroInsertar)
@@ -130,7 +127,6 @@ namespace _4enRaya
                 MessageBox.Show("Gano "+color);
             }
         }
->>>>>>> 815192f47b15b48d262eae29e7994d2f4387c0ae
 
         private void asignarColor(PictureBox aux)
         {
