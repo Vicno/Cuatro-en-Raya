@@ -56,7 +56,8 @@ namespace _4enRaya
                     //MessageBox.Show(""+auxiliar.BackColor);
                 }
             }
-        }
+        } 
+
         private void asignarColor(PictureBox aux)
         {
             if (turno % 2 == 0)
