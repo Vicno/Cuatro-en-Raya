@@ -55,7 +55,7 @@ namespace _4enRaya
                     fichas[posicion]++;
                     comprobarGanador(numeroInsertar);
                     turno++;
-                    
+
                     //MessageBox.Show(""+auxiliar.BackColor);
                 }
             }
@@ -83,7 +83,7 @@ namespace _4enRaya
                     }
                 }
             }
-            if ((numeroInsertar % 7) > 3)
+            if ((numeroInsertar % 7) > 2)
             {
                 int izq = numeroInsertar - 1;
                 while (cont < 3)
@@ -111,7 +111,7 @@ namespace _4enRaya
                     PictureBox auxabajo = buscar(nombreabajo);
                     if (auxabajo.Tag == auxiliar.Tag)
                     {
-                        abajo+=7;
+                        abajo += 7;
                         cont++;
                     }
                     else
@@ -121,40 +121,77 @@ namespace _4enRaya
                     }
                 }
             }
-            if (cont == 3)
+            if ((numeroInsertar < 19) && ((numeroInsertar % 7) < 4))
             {
-                String color = turno % 2 == 0 ? "azul" : "rojo";
-                MessageBox.Show("Gano " + color);
-                reiniciar();
-            }
-            int contadordeprofundidades=0;
-            foreach (int prof in fichas)
-            {
-                if (prof==6)
+                int diagder = numeroInsertar + 8;
+                while (cont < 3)
                 {
-                    contadordeprofundidades++;
+                    String nombrediagder = "picture" + diagder;
+                    PictureBox auxdiagder = buscar(nombrediagder);
+                    if (auxdiagder.Tag == auxiliar.Tag)
+                    {
+                        diagder += 8;
+                        cont++;
+                    }
+                    else
+                    {
+                        cont = 0;
+                        break;
+                    }
                 }
             }
-            if(contadordeprofundidades==7)
+            if ((numeroInsertar < 19) && ((numeroInsertar % 7) > 2))
             {
-                MessageBox.Show("empate");
-                reiniciar();
+                int diagizq = numeroInsertar + 6;
+                while (cont < 3)
+                {
+                    String nombrediagizq = "picture" + diagizq;
+                    PictureBox auxdiagizq = buscar(nombrediagizq);
+                    if (auxdiagizq.Tag == auxiliar.Tag)
+                    {
+                        diagizq += 6;
+                        cont++;
+                    }
+                    else
+                    {
+                        cont = 0;
+                        break;
+                    }
+                }
             }
-        }
 
+            if (cont == 3)
+                {
+                    String color = turno % 2 == 0 ? "azul" : "rojo";
+                    MessageBox.Show("Gano " + color);
+                    reiniciar();
+                }
+                int contadordeprofundidades = 0;
+                foreach (int prof in fichas)
+                {
+                    if (prof == 6)
+                    {
+                        contadordeprofundidades++;
+                    }
+                }
+                if (contadordeprofundidades == 7)
+                {
+                    MessageBox.Show("empate");
+                    reiniciar();
+                }
+        }
         private void reiniciar()
         {
-            foreach(PictureBox pic in pictures)
+            foreach (PictureBox pic in pictures)
             {
                 pic.BackgroundImage = null;
                 pic.Tag = " ";
             }
-            for(int i=0;i<7;i++)
+            for (int i = 0; i < 7; i++)
             {
-                fichas[i]=0;
+                fichas[i] = 0;
             }
         }
-
         private void asignarColor(PictureBox aux)
         {
             if (turno % 2 == 0)
@@ -237,7 +274,7 @@ namespace _4enRaya
             pictures.Add(picture41);
         }
 
-private void Form1_Load(object sender, EventArgs e)
+        private void Form1_Load(object sender, EventArgs e)
         {
 
         }
@@ -266,6 +303,8 @@ private void Form1_Load(object sender, EventArgs e)
         {
             reiniciar();
         }
-    }
+    
 
+    }
 }
+    
