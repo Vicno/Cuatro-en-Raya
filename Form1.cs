@@ -63,6 +63,7 @@ namespace _4enRaya
         }
         private void comprobarGanador(int numeroInsertar)
         {
+            cont = 0;
             if ((numeroInsertar % 7) < 4)
             {
                 comprobarDer(numeroInsertar);
@@ -83,11 +84,17 @@ namespace _4enRaya
             {
                 comprobardiagizq(numeroInsertar);
             }
+            gano();
+
+        }
+
+        private void gano()
+        {
             if (cont == 3)
             {
                 String color = turno % 2 == 0 ? "azul" : "rojo";
                 MessageBox.Show("Gano " + color);
-                reiniciar();
+                //reiniciar();
             }
         }
 
@@ -105,15 +112,16 @@ namespace _4enRaya
                 }
                 else
                 {
-                    //if (cont > 0)
-                    //{
-                    //    comprobarIzq(numeroInsertar);
-                    //}
-                    //else
-                    //{
-                    cont = 0;
-                    break;
-                    //}
+                    if (cont > 0)
+                    {
+                        comprobarIzq(numeroInsertar);
+                        break;
+                    }
+                    else
+                    {
+                        cont = 0;
+                        break;
+                    }
                 }
             }
         }
@@ -121,8 +129,12 @@ namespace _4enRaya
         private void comprobarIzq(int numeroInsertar)
         {
             int izq = numeroInsertar - 1;
-            while (cont < 3)
+            /*if (cond > 0)
             {
+                cont = cond;
+            }*/
+            while (cont < 3)
+            {   
                 String nombreizq = "picture" + izq;
                 PictureBox auxizq = buscar(nombreizq);
                 if (auxizq.Tag == auxiliar.Tag)
@@ -285,11 +297,6 @@ namespace _4enRaya
             pictures.Add(picture41);
         }
 
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private void BotonSonido_Click(object sender, EventArgs e)
         {
 
@@ -322,10 +329,11 @@ namespace _4enRaya
                 pic.BackgroundImage = null;
                 pic.Tag = " ";
             }
-            for (int i = 0; i < 7; i++)
-            {
-                fichas[i] = 0;
-            }
+            iniciar();
+            cont = 0;
+            seleccionado = null;
+            auxiliar = null;
+            turno = 0;
         }
 
     }
