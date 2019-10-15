@@ -83,7 +83,7 @@ namespace _4enRaya
                     }
                 }
             }
-            if ((numeroInsertar % 7) > 3)
+            if ((numeroInsertar % 7) > 2)
             {
                 int izq = numeroInsertar - 1;
                 while (cont < 3)
@@ -112,6 +112,44 @@ namespace _4enRaya
                     if (auxabajo.Tag == auxiliar.Tag)
                     {
                         abajo+=7;
+                        cont++;
+                    }
+                    else
+                    {
+                        cont = 0;
+                        break;
+                    }
+                }
+            }
+            if ((numeroInsertar < 19)&& ((numeroInsertar % 7) < 4))
+            {
+                int diagder = numeroInsertar + 8;
+                while (cont < 3)
+                {
+                    String nombrediagder = "picture" + diagder;
+                    PictureBox auxdiagder = buscar(nombrediagder);
+                    if (auxdiagder.Tag == auxiliar.Tag)
+                    {
+                        diagder += 8;
+                        cont++;
+                    }
+                    else
+                    {
+                        cont = 0;
+                        break;
+                    }
+                }
+            }
+            if ((numeroInsertar < 19) && ((numeroInsertar % 7) > 2))
+            {
+                int diagizq = numeroInsertar + 6;
+                while (cont < 3)
+                {
+                    String nombrediagizq = "picture" + diagizq;
+                    PictureBox auxdiagizq = buscar(nombrediagizq);
+                    if (auxdiagizq.Tag == auxiliar.Tag)
+                    {
+                        diagizq += 6;
                         cont++;
                     }
                     else
