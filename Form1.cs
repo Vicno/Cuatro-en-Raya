@@ -14,7 +14,9 @@ namespace _4enRaya
     public partial class Form1 : Form
     {
         int turno = 0;
+
         int tamaño = 60;
+
         int cont = 0;
         int[] fichas = new int[7];
         PictureBox seleccionado = null;
@@ -63,9 +65,11 @@ namespace _4enRaya
         }
         private void comprobarGanador(int numeroInsertar)
         {
+
             if ((numeroInsertar % 7) < 4)
             {
                 comprobarDer(numeroInsertar);
+
             }
             if ((numeroInsertar % 7) > 2)
             {
@@ -100,6 +104,7 @@ namespace _4enRaya
                 PictureBox auxder = buscar(nombreder);
                 if (auxder.Tag == auxiliar.Tag)
                 {
+
                     der++;
                     cont++;
                 }
@@ -122,6 +127,7 @@ namespace _4enRaya
         {
             int izq = numeroInsertar - 1;
             while (cont < 3)
+
             {
                 String nombreizq = "picture" + izq;
                 PictureBox auxizq = buscar(nombreizq);
@@ -132,6 +138,7 @@ namespace _4enRaya
                 }
                 else
                 {
+
                     //if (cont > 0)
                     //{
                     //    comprobarDer(numeroInsertar);
@@ -149,6 +156,7 @@ namespace _4enRaya
         {
             int abajo = numeroInsertar + 7;
             while (cont < 3)
+
             {
                 String nombreabajo = "picture" + abajo;
                 PictureBox auxabajo = buscar(nombreabajo);
@@ -182,11 +190,13 @@ namespace _4enRaya
                     break;
                 }
             }
+
         }
         private void comprobardiagizq(int numeroInsertar)
         {
             int diagizq = numeroInsertar + 6;
             while (cont < 3)
+
             {
                 String nombrediagizq = "picture" + diagizq;
                 PictureBox auxdiagizq = buscar(nombrediagizq);
@@ -317,6 +327,7 @@ namespace _4enRaya
 
         private void reiniciar()
         {
+            cont = 0;
             foreach (PictureBox pic in pictures)
             {
                 pic.BackgroundImage = null;
