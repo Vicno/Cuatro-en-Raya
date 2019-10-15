@@ -70,7 +70,7 @@ namespace _4enRaya
             if ((numeroInsertar % 7) < 4)
             {
                 int der = numeroInsertar + 1;
-                while (mov < 3)
+                while (cont < 3)
                 {
                     String nombreder = "picture" + der;
                     PictureBox auxder = buscar(nombreder);
@@ -82,7 +82,7 @@ namespace _4enRaya
                     else
                     {
                         mov = 0;
-                        //cont = 0;
+                        cont = 0;
                         break;
                     }
                     mov++;
@@ -91,7 +91,7 @@ namespace _4enRaya
             if ((numeroInsertar % 7) > 2)
             {
                 int izq = numeroInsertar - 1;
-                while (mov < 3)
+                while (cont < 3)
                 {
                     String nombreizq = "picture" + izq;
                     PictureBox auxizq = buscar(nombreizq);
@@ -102,7 +102,7 @@ namespace _4enRaya
                     }
                     else
                     {
-                        //cont = 0;
+                        cont = 0;
                         mov = 0;
                         break;
                     }
@@ -117,7 +117,7 @@ namespace _4enRaya
             if (numeroInsertar < 21)
             {
                 int abajo = numeroInsertar + 7;
-                while (mov < 3)
+                while (cont < 3)
                 {
                     String nombreabajo = "picture" + abajo;
                     PictureBox auxabajo = buscar(nombreabajo);
@@ -129,13 +129,11 @@ namespace _4enRaya
                     }
                     else
                     {
-                        mov = 0;
+                        cont = 0;
                         break;
                     }
                 }
             }
-
-            if (cont >= 3)
 
             if ((numeroInsertar < 19)&& ((numeroInsertar % 7) < 4))
             {

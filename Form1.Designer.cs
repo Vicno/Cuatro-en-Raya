@@ -119,7 +119,7 @@
             // 
             // picture0
             // 
-            this.picture0.BackColor = System.Drawing.Color.White;
+            this.picture0.BackColor = System.Drawing.Color.WhiteSmoke;
             this.picture0.Location = new System.Drawing.Point(80, 74);
             this.picture0.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.picture0.Name = "picture0";
@@ -152,7 +152,7 @@
             // 
             // picture2
             // 
-            this.picture2.BackColor = System.Drawing.Color.White;
+            this.picture2.BackColor = System.Drawing.Color.WhiteSmoke;
             this.picture2.Location = new System.Drawing.Point(240, 74);
             this.picture2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.picture2.Name = "picture2";
@@ -174,7 +174,7 @@
             // 
             // picture4
             // 
-            this.picture4.BackColor = System.Drawing.Color.White;
+            this.picture4.BackColor = System.Drawing.Color.WhiteSmoke;
             this.picture4.Location = new System.Drawing.Point(400, 74);
             this.picture4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.picture4.Name = "picture4";
@@ -185,7 +185,7 @@
             // 
             // picture6
             // 
-            this.picture6.BackColor = System.Drawing.Color.White;
+            this.picture6.BackColor = System.Drawing.Color.WhiteSmoke;
             this.picture6.Location = new System.Drawing.Point(560, 74);
             this.picture6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.picture6.Name = "picture6";
@@ -196,7 +196,7 @@
             // 
             // picture13
             // 
-            this.picture13.BackColor = System.Drawing.Color.White;
+            this.picture13.BackColor = System.Drawing.Color.WhiteSmoke;
             this.picture13.Location = new System.Drawing.Point(560, 148);
             this.picture13.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.picture13.Name = "picture13";
@@ -218,7 +218,7 @@
             // 
             // picture11
             // 
-            this.picture11.BackColor = System.Drawing.Color.White;
+            this.picture11.BackColor = System.Drawing.Color.WhiteSmoke;
             this.picture11.Location = new System.Drawing.Point(400, 148);
             this.picture11.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.picture11.Name = "picture11";
@@ -240,7 +240,7 @@
             // 
             // picture9
             // 
-            this.picture9.BackColor = System.Drawing.Color.White;
+            this.picture9.BackColor = System.Drawing.Color.WhiteSmoke;
             this.picture9.Location = new System.Drawing.Point(240, 148);
             this.picture9.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.picture9.Name = "picture9";
@@ -262,7 +262,7 @@
             // 
             // picture7
             // 
-            this.picture7.BackColor = System.Drawing.Color.White;
+            this.picture7.BackColor = System.Drawing.Color.WhiteSmoke;
             this.picture7.Location = new System.Drawing.Point(80, 148);
             this.picture7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.picture7.Name = "picture7";
@@ -273,7 +273,7 @@
             // 
             // picture27
             // 
-            this.picture27.BackColor = System.Drawing.Color.White;
+            this.picture27.BackColor = System.Drawing.Color.WhiteSmoke;
             this.picture27.Location = new System.Drawing.Point(560, 295);
             this.picture27.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.picture27.Name = "picture27";
@@ -295,7 +295,7 @@
             // 
             // picture25
             // 
-            this.picture25.BackColor = System.Drawing.Color.White;
+            this.picture25.BackColor = System.Drawing.Color.WhiteSmoke;
             this.picture25.Location = new System.Drawing.Point(400, 295);
             this.picture25.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.picture25.Name = "picture25";
@@ -317,7 +317,7 @@
             // 
             // picture23
             // 
-            this.picture23.BackColor = System.Drawing.Color.White;
+            this.picture23.BackColor = System.Drawing.Color.WhiteSmoke;
             this.picture23.Location = new System.Drawing.Point(240, 295);
             this.picture23.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.picture23.Name = "picture23";
@@ -339,7 +339,7 @@
             // 
             // picture21
             // 
-            this.picture21.BackColor = System.Drawing.Color.White;
+            this.picture21.BackColor = System.Drawing.Color.WhiteSmoke;
             this.picture21.Location = new System.Drawing.Point(80, 295);
             this.picture21.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.picture21.Name = "picture21";
@@ -350,7 +350,7 @@
             // 
             // picture20
             // 
-            this.picture20.BackColor = System.Drawing.Color.White;
+            this.picture20.BackColor = System.Drawing.Color.WhiteSmoke;
             this.picture20.Location = new System.Drawing.Point(560, 222);
             this.picture20.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.picture20.Name = "picture20";
@@ -372,7 +372,7 @@
             // 
             // picture18
             // 
-            this.picture18.BackColor = System.Drawing.Color.White;
+            this.picture18.BackColor = System.Drawing.Color.WhiteSmoke;
             this.picture18.Location = new System.Drawing.Point(400, 222);
             this.picture18.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.picture18.Name = "picture18";
@@ -394,7 +394,7 @@
             // 
             // picture16
             // 
-            this.picture16.BackColor = System.Drawing.Color.White;
+            this.picture16.BackColor = System.Drawing.Color.WhiteSmoke;
             this.picture16.Location = new System.Drawing.Point(240, 222);
             this.picture16.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.picture16.Name = "picture16";
@@ -416,7 +416,7 @@
             // 
             // picture14
             // 
-            this.picture14.BackColor = System.Drawing.Color.White;
+            this.picture14.BackColor = System.Drawing.Color.WhiteSmoke;
             this.picture14.Location = new System.Drawing.Point(80, 222);
             this.picture14.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.picture14.Name = "picture14";
@@ -427,7 +427,7 @@
             // 
             // picture41
             // 
-            this.picture41.BackColor = System.Drawing.Color.White;
+            this.picture41.BackColor = System.Drawing.Color.WhiteSmoke;
             this.picture41.Location = new System.Drawing.Point(560, 443);
             this.picture41.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.picture41.Name = "picture41";
@@ -449,7 +449,7 @@
             // 
             // picture39
             // 
-            this.picture39.BackColor = System.Drawing.Color.White;
+            this.picture39.BackColor = System.Drawing.Color.WhiteSmoke;
             this.picture39.Location = new System.Drawing.Point(400, 443);
             this.picture39.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.picture39.Name = "picture39";
@@ -471,7 +471,7 @@
             // 
             // picture37
             // 
-            this.picture37.BackColor = System.Drawing.Color.White;
+            this.picture37.BackColor = System.Drawing.Color.WhiteSmoke;
             this.picture37.Location = new System.Drawing.Point(240, 443);
             this.picture37.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.picture37.Name = "picture37";
@@ -493,7 +493,7 @@
             // 
             // picture35
             // 
-            this.picture35.BackColor = System.Drawing.Color.White;
+            this.picture35.BackColor = System.Drawing.Color.WhiteSmoke;
             this.picture35.Location = new System.Drawing.Point(80, 443);
             this.picture35.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.picture35.Name = "picture35";
@@ -504,7 +504,7 @@
             // 
             // picture34
             // 
-            this.picture34.BackColor = System.Drawing.Color.White;
+            this.picture34.BackColor = System.Drawing.Color.WhiteSmoke;
             this.picture34.Location = new System.Drawing.Point(560, 369);
             this.picture34.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.picture34.Name = "picture34";
@@ -526,7 +526,7 @@
             // 
             // picture32
             // 
-            this.picture32.BackColor = System.Drawing.Color.White;
+            this.picture32.BackColor = System.Drawing.Color.WhiteSmoke;
             this.picture32.Location = new System.Drawing.Point(400, 369);
             this.picture32.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.picture32.Name = "picture32";
@@ -548,7 +548,7 @@
             // 
             // picture30
             // 
-            this.picture30.BackColor = System.Drawing.Color.White;
+            this.picture30.BackColor = System.Drawing.Color.WhiteSmoke;
             this.picture30.Location = new System.Drawing.Point(240, 369);
             this.picture30.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.picture30.Name = "picture30";
@@ -570,7 +570,7 @@
             // 
             // picture28
             // 
-            this.picture28.BackColor = System.Drawing.Color.White;
+            this.picture28.BackColor = System.Drawing.Color.WhiteSmoke;
             this.picture28.Location = new System.Drawing.Point(80, 369);
             this.picture28.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.picture28.Name = "picture28";
@@ -612,6 +612,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.ClientSize = new System.Drawing.Size(1073, 666);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.BotonMutear);
