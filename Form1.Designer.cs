@@ -73,6 +73,7 @@
             this.BotonSonido = new System.Windows.Forms.Button();
             this.BotonMutear = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
+            this.botonreiniciar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.picture0)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picture1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picture3)).BeginInit();
@@ -608,11 +609,22 @@
             this.label1.TabIndex = 44;
             this.label1.Text = "label1";
             // 
+            // botonreiniciar
+            // 
+            this.botonreiniciar.Location = new System.Drawing.Point(769, 180);
+            this.botonreiniciar.Name = "botonreiniciar";
+            this.botonreiniciar.Size = new System.Drawing.Size(114, 68);
+            this.botonreiniciar.TabIndex = 45;
+            this.botonreiniciar.Text = "reiniciar";
+            this.botonreiniciar.UseVisualStyleBackColor = true;
+            this.botonreiniciar.Click += new System.EventHandler(this.Botonreiniciar_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1073, 666);
+            this.Controls.Add(this.botonreiniciar);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.BotonMutear);
             this.Controls.Add(this.BotonSonido);
@@ -756,6 +768,7 @@
         private System.Windows.Forms.Button BotonSonido;
         private System.Windows.Forms.Button BotonMutear;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button botonreiniciar;
     }
 }
 

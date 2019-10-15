@@ -56,12 +56,11 @@ namespace _4enRaya
                     fichas[posicion]++;
                     comprobarGanador(numeroInsertar);
                     turno++;
-                    
+
                     //MessageBox.Show(""+auxiliar.BackColor);
                 }
             }
         }
-
         private void comprobarGanador(int numeroInsertar)
         {
             if ((numeroInsertar % 7) < 4)
@@ -76,7 +75,7 @@ namespace _4enRaya
             {
                 comprobarabajo(numeroInsertar);
             }
-            if ((numeroInsertar < 19)&& ((numeroInsertar % 7) < 4))
+            if ((numeroInsertar < 19) && ((numeroInsertar % 7) < 4))
             {
                 comprobardiagder(numeroInsertar);
             }
@@ -86,8 +85,9 @@ namespace _4enRaya
             }
             if (cont == 3)
             {
-                String color = turno%2==0 ? "azul" : "rojo";
-                MessageBox.Show("Gano "+color);
+                String color = turno % 2 == 0 ? "azul" : "rojo";
+                MessageBox.Show("Gano " + color);
+                reiniciar();
             }
         }
 
@@ -111,8 +111,8 @@ namespace _4enRaya
                     //}
                     //else
                     //{
-                        cont = 0;
-                        break;
+                    cont = 0;
+                    break;
                     //}
                 }
             }
@@ -138,8 +138,8 @@ namespace _4enRaya
                     //}
                     //else
                     //{
-                        cont = 0;
-                        break;
+                    cont = 0;
+                    break;
                     //}
                 }
             }
@@ -285,7 +285,7 @@ namespace _4enRaya
             pictures.Add(picture41);
         }
 
-private void Form1_Load(object sender, EventArgs e)
+        private void Form1_Load(object sender, EventArgs e)
         {
 
         }
@@ -309,5 +309,25 @@ private void Form1_Load(object sender, EventArgs e)
             BotonMutear.Visible = false;
             BotonSonido.Visible = true;
         }
+
+        private void Botonreiniciar_Click(object sender, EventArgs e)
+        {
+            reiniciar();
+        }
+
+        private void reiniciar()
+        {
+            foreach (PictureBox pic in pictures)
+            {
+                pic.BackgroundImage = null;
+                pic.Tag = " ";
+            }
+            for (int i = 0; i < 7; i++)
+            {
+                fichas[i] = 0;
+            }
+        }
+
     }
-    }
+}
+    
