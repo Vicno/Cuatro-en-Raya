@@ -505,13 +505,9 @@
             // 
             // picture34
             // 
-<<<<<<< HEAD
-            this.picture34.BackColor = System.Drawing.Color.White;
-            this.picture34.Location = new System.Drawing.Point(560, 370);
-=======
+
             this.picture34.BackColor = System.Drawing.Color.WhiteSmoke;
             this.picture34.Location = new System.Drawing.Point(560, 369);
->>>>>>> 89b31d9eaaa1e1a68e80f4aa0df995ce42d012ab
             this.picture34.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.picture34.Name = "picture34";
             this.picture34.Size = new System.Drawing.Size(80, 74);
