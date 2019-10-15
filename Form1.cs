@@ -14,6 +14,7 @@ namespace _4enRaya
     public partial class Form1 : Form
     {
         int turno = 0;
+        int tamaño = 60;
         int[] fichas = new int[7];
         PictureBox seleccionado = null;
         PictureBox auxiliar = null;
@@ -79,6 +80,7 @@ namespace _4enRaya
                 if (pictures[i].Name == nombre)
                 {
                     aux = pictures[i];
+                    break;
                 }
             }
             return aux;
