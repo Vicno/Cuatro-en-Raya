@@ -1,0 +1,11 @@
+C:\Users\DIEGO\source\repos\4enRaya\Cuatro-en-Raya\bin\Debug\4enRaya.exe.config
+C:\Users\DIEGO\source\repos\4enRaya\Cuatro-en-Raya\bin\Debug\4enRaya.exe
+C:\Users\DIEGO\source\repos\4enRaya\Cuatro-en-Raya\bin\Debug\4enRaya.pdb
+C:\Users\DIEGO\source\repos\4enRaya\Cuatro-en-Raya\obj\Debug\4enRaya.csprojAssemblyReference.cache
+C:\Users\DIEGO\source\repos\4enRaya\Cuatro-en-Raya\obj\Debug\_4enRaya.Form1.resources
+C:\Users\DIEGO\source\repos\4enRaya\Cuatro-en-Raya\obj\Debug\_4enRaya.Properties.Resources.resources
+C:\Users\DIEGO\source\repos\4enRaya\Cuatro-en-Raya\obj\Debug\4enRaya.csproj.GenerateResource.cache
+C:\Users\DIEGO\source\repos\4enRaya\Cuatro-en-Raya\obj\Debug\4enRaya.csproj.CoreCompileInputs.cache
+C:\Users\DIEGO\source\repos\4enRaya\Cuatro-en-Raya\obj\Debug\4enRaya.exe
+C:\Users\DIEGO\source\repos\4enRaya\Cuatro-en-Raya\obj\Debug\4enRaya.pdb
+C:\Users\DIEGO\source\repos\4enRaya\Cuatro-en-Raya\bin\Debug\2CELLOS - Seven Nation Army.wav
